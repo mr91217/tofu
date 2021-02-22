@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "tofuapp/base.html"%}
+{% load static %}
+  {% block body_block %}
+       <h1>welcome to the 豆腐 BLOG</h1>
+       <h1> </h1>
+       <h1> </h1>
+
+       <div class="container">
+          <div class="row">
+            <div class="col-sm">
+                <a href="{% url 'tofuapp:lulu'%}"><img src="{% static "image/20201114_IMG_1145.jpg" %}" alt=""></a>
+            </div>
+            <div class="col-sm">
+                <a href="{% url 'tofuapp:lucas'%}"><img src="{% static "image/20210105_IMG_2375.jpg" %}" alt=""></a>
+            </div>
+            <div class="col-sm">
+                <a href="{% url 'tofuapp:tofu'%}"><img src="{% static "image/20201206_IMG_1737.jpg" %}" alt=""></a>
+            </div>
+          </div>
+       </div>
+       <h1>   </h1>
+       <div class="container">
+           <div class="row">
+              <div class="col-sm">
+                嚕嚕
+              </div>
+              <div class="col-sm">
+                盧卡斯
+              </div>
+              <div class="col-sm">
+                豆腐
+              </div>
+           </div>
+       </div>
+       {% endblock %}
